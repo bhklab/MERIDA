@@ -9,7 +9,7 @@ set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++14 -Wall -pedantic -ldl")
 
 find_package(Boost COMPONENTS filesystem regex)
 find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
-find_package(Eigen3 COMPONENTS Core REQUIRED)
+find_package(Eigen COMPONENTS Core REQUIRED)
 
 if(Boost_FOUND)
 	include_directories(${Boost_INCLUDE_DIRS})
